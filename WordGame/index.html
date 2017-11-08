@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Up!</title>
+	<link rel="stylesheet" type="text/css" href="css.css">	
+	<script src="controller.js"></script>
+</head>
+
+<body>
+
+	<div class="column column-1">
+		<h1>Player 1</h1>
+		<p>Number Of Guesses: <span id="player-1-guess-amount">0</span></p>
+
+		<div>
+			<h3>Word:</h3>
+			<p id="player-1-word" class="player-word"></p>
+		</div>
+
+		<div>
+			<h3>Guessed Words:</h3>
+			<ul id="player-1-guess-list">
+				
+			</ul>
+		</div>		
+
+	</div>
+
+	<div class="column column-2">
+
+
+		<div id="input-wrapper" class="visible">
+
+			<div>
+				<label for="submit-input" id="game-label">Player 1: Enter Your Word</label><br/>
+				<input id="submit-input" type="password" onkeyup="changeCurrentTotal(event);" />
+				<div class="small-number current-type-length">0</div>
+			</div>
+
+			<div>
+				<button id="submit-button" onclick="submitMyWord(event);">Submit</button>
+			</div>
+
+		</div>
+
+		<div id="guess-wrapper" class="hidden">
+			<div>
+				<label for="guess-input" id="game-label">Player 1: Make a guess</label><br/>
+				<input id="guess-input" onkeyup="changeCurrentTotal(event);" />
+				<div class="small-number current-type-length">0</div>
+			</div>
+
+			<div>
+				<button id="guess-button" onclick="guessWord(event);">Guess!</button>
+			</div>
+		</div>
+
+		<h3 id="character-count"></h3>
+
+		<h1 id="winner"></h1>
+
+		<button id="reset-button" class="hidden" onclick="reset(event);">Reset</button>
+
+	</div>
+
+	<div class="column column-3">
+		<h1>Player 2</h1>
+		<p>Number Of Guesses: <span id="player-2-guess-amount">0</span></p>
+		<div>
+			<h3>Word:</h3>
+			<p id="player-2-word" class="player-word"></p>
+		</div>
+
+		<div>
+			<h3>Guessed Words:</h3>
+			<ul id="player-2-guess-list">
+				
+			</ul>
+		</div>	
+
+	</div>
+
+
+
+</body>
+
+</html>

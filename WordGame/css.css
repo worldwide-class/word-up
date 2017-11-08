@@ -1,0 +1,50 @@
+body{
+	width:100%;
+	height:100vh;
+	position:absolute;
+	background: grey;
+	text-align:center;
+	font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+ul{
+	list-style: none;
+	padding:0px;
+}
+
+.hidden{
+	display: none;
+}
+
+.visible{
+	display: block;
+}
+
+.column{
+	display:block;
+	float:left;
+	height: 100vh;
+
+}
+
+.column-1 {
+	width: 35%;
+
+}
+
+.column-2 {
+	width: 30%;
+	background: lightgrey;
+}
+
+.column-3 {
+	width: 35%;
+	
+}
+
+.player-word {
+	font-size: 25px;
+	font-style: italic;
+	color:blue;
+}
